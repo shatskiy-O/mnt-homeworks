@@ -1,5 +1,22 @@
----
-clickhouse:
-  hosts:
-    clickhouse-01:
-      ansible_host: <IP_here>
+all:
+  children:
+    clickhouse:
+      hosts:
+        centos_ansible_target:
+          ansible_host: 127.0.0.1
+          ansible_port: 2222
+          ansible_user: root
+          ansible_ssh_pass: Teremok2011
+          ansible_python_interpreter: /usr/bin/python3
+          ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+    vector:
+      hosts:
+        centos_ansible_target:
+          ansible_host: 127.0.0.1
+          ansible_port: 2222
+          ansible_user: root
+          ansible_ssh_pass: Teremok2011
+          ansible_python_interpreter: /usr/bin/python3
+          ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+
+
