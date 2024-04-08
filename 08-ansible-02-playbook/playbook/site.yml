@@ -1,85 +1,49 @@
----
-- name: Will wait till reachable
-  hosts: all
-  gather_facts: false
-  tasks:
-    - name: Wait for hosts available
-      ansible.builtin.wait_for_connection:
-        delay: 10
-        timeout: 120
-
-    - name: Gather facts for the first time
-      ansible.builtin.setup:
-
-- name: Install Clickhouse
-  hosts: clickhouse
+- name: Install and Configure LightHouse
+  hosts: lighthouse
   become: true
   tasks:
-    - name: Add ClickHouse repo
-      ansible.builtin.get_url:
-        url: https://repo.clickhouse.com/rpm/clickhouse.repo
-        dest: /etc/yum.repos.d/clickhouse.repo
-
-    - name: Install ClickHouse packages
-      ansible.builtin.yum:
-        name:
-          - clickhouse-client
-          - clickhouse-server
+    - name: Install Nginx
+      ansible.builtin.apt:
+        name: nginx
         state: present
 
-    - name: Start ClickHouse service as user 'clickhouse'
-      ansible.builtin.command:
-        cmd: "clickhouse-server --config-file=/etc/clickhouse-server/config.xml"
-      become_user: clickhouse
-      environment:
-        CLICKHOUSE_CONFIG: /etc/clickhouse-server/config.xml
+    - name: Clone LightHouse repository
+      ansible.builtin.git:
+        repo: 'https://github.com/VKCOM/lighthouse.git'
+        dest: /var/www/lighthouse
+        # Удалите строку version или замените 'main' на правильное название ветки
+        # version: main
 
-- name: Install Vector
-  hosts: vector
-  become: true
-  vars_files:
-    - ../group_vars/vector/vars.yml
-  tasks:
-    - name: Ensure vector directory exists
+    - name: Ensure Nginx sites-available directory exists
       ansible.builtin.file:
-        path: "{{ vector_path }}"
+        path: /etc/nginx/sites-available
         state: directory
-        mode: "0755"
 
-    - name: Download and unpack Vector archive
-      ansible.builtin.unarchive:
-        src: "https://packages.timber.io/vector/{{ vector_version }}/vector-{{ vector_version }}-{{ vector_arch }}-unknown-linux-gnu.tar.gz"
-        remote_src: true
-        dest: "{{ vector_path }}"
-        extra_opts: ["--strip-components=1"]
-        creates: "{{ vector_path }}/bin/vector"
-
-    - name: Configure Vector | Ensure config directory exists
-      ansible.builtin.file:
-        path: "{{ vector_config_path }}"
-        state: directory
-        mode: "0755"
-
-    - name: Configure Vector | Template config
+    - name: Configure Nginx for LightHouse
       ansible.builtin.template:
-        src: vector.toml.j2
-        dest: "{{ vector_config_path }}/vector.toml"
-        mode: "0644"
+        src: lighthouse.nginx.j2
+        dest: /etc/nginx/sites-available/lighthouse
 
-    - name: Vector to systemd
-      ansible.builtin.copy:
-        src: "{{ vector_path }}/etc/systemd/vector.service"
-        dest: /etc/systemd/system/vector.service
-        remote_src: true
-        mode: "0644"
+    - name: Ensure Nginx sites-enabled directory exists
+      ansible.builtin.file:
+        path: /etc/nginx/sites-enabled
+        state: directory
 
-    - name: Reload systemd daemon
-      ansible.builtin.systemd:
-        daemon_reload: true
+    - name: Enable LightHouse site
+      ansible.builtin.file:
+        src: /etc/nginx/sites-available/lighthouse
+        dest: /etc/nginx/sites-enabled/lighthouse
+        state: link
 
-    - name: Enable and start Vector service
-      ansible.builtin.systemd:
-        name: vector
-        enabled: true
-        state: started
+  handlers:
+    - name: restart nginx
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+
+
+
+
+
+
 

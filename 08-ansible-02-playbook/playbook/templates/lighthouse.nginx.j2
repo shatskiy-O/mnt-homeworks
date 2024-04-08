@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name lighthouse.example.com;
+
+    location / {
+        root /var/www/lighthouse;
+        try_files $uri $uri/ =404;
+    }
+}
+
+

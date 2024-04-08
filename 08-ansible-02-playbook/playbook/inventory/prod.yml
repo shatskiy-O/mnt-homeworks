@@ -2,21 +2,23 @@ all:
   children:
     clickhouse:
       hosts:
-        centos_ansible_target:
-          ansible_host: 127.0.0.1
-          ansible_port: 2222
-          ansible_user: root
-          ansible_ssh_pass: Teremok2011
-          ansible_python_interpreter: /usr/bin/python3
-          ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+        clickhouse_vm:
+          ansible_host: 158.160.41.32
+          ansible_user: tor
+          ansible_ssh_private_key_file: /Users/shatskie/.ssh/netologia1
     vector:
       hosts:
-        centos_ansible_target:
-          ansible_host: 127.0.0.1
-          ansible_port: 2222
-          ansible_user: root
-          ansible_ssh_pass: Teremok2011
-          ansible_python_interpreter: /usr/bin/python3
-          ansible_ssh_common_args: '-o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+        vector_vm:
+          ansible_host: 178.154.224.228
+          ansible_user: tor
+          ansible_ssh_private_key_file: /Users/shatskie/.ssh/netologia1
+    lighthouse:
+      hosts:
+        lighthouse_vm:
+          ansible_host: 178.154.225.68
+          ansible_user: tor
+          ansible_ssh_private_key_file: /Users/shatskie/.ssh/netologia1
+
+
 
 
