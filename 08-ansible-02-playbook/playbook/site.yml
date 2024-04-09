@@ -1,45 +1,72 @@
-- name: Install and Configure LightHouse
+---
+- name: Will wait till reachable
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Wait for hosts available
+      ansible.builtin.wait_for_connection:
+        delay: 10
+        timeout: 120
+    - name: Gather facts for the first time
+      ansible.builtin.setup:
+  tags: wait, all-hosts
+
+- name: Clickhouse
+  hosts: clickhouse
+  become: true
+  tags: clickhouse
+  tasks:
+    - name: Check if ClickHouse is already installed
+      ansible.builtin.package_facts:
+        manager: auto
+
+    - name: Install prerequisites for ClickHouse
+      ansible.builtin.apt:
+        name: apt-transport-https
+        state: present
+        update_cache: yes
+      when: "'clickhouse-server' not in ansible_facts.packages"
+
+    - name: Add ClickHouse GPG key
+      ansible.builtin.apt_key:
+        url: "https://repo.clickhouse.com/CLICKHOUSE-KEY.GPG"
+        state: present
+      when: "'clickhouse-server' not in ansible_facts.packages"
+
+    - name: Add ClickHouse repository
+      ansible.builtin.apt_repository:
+        repo: "deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main"
+        filename: 'clickhouse'
+      when: "'clickhouse-server' not in ansible_facts.packages"
+
+    - name: Install ClickHouse server and client if not already installed
+      ansible.builtin.apt:
+        name:
+          - clickhouse-server
+          - clickhouse-client
+        state: latest
+        update_cache: yes
+      when: "'clickhouse-server' not in ansible_facts.packages or 'clickhouse-client' not in ansible_facts.packages"
+
+- name: Vector
+  hosts: vector
+  become: true
+  vars_files:
+    - group_vars/vector/vector.yml
+  tags: vector
+  roles:
+    - role: Vector
+
+- name: Lighthouse+Nginx
   hosts: lighthouse
   become: true
-  tasks:
-    - name: Install Nginx
-      ansible.builtin.apt:
-        name: nginx
-        state: present
+  vars_files:
+    - group_vars/lighthouse/lighthouse.yml
+  tags: nginx, lighthouse
+  roles:
+    - role: Lighthouse
 
-    - name: Clone LightHouse repository
-      ansible.builtin.git:
-        repo: 'https://github.com/VKCOM/lighthouse.git'
-        dest: /var/www/lighthouse
-        # Удалите строку version или замените 'main' на правильное название ветки
-        # version: main
 
-    - name: Ensure Nginx sites-available directory exists
-      ansible.builtin.file:
-        path: /etc/nginx/sites-available
-        state: directory
-
-    - name: Configure Nginx for LightHouse
-      ansible.builtin.template:
-        src: lighthouse.nginx.j2
-        dest: /etc/nginx/sites-available/lighthouse
-
-    - name: Ensure Nginx sites-enabled directory exists
-      ansible.builtin.file:
-        path: /etc/nginx/sites-enabled
-        state: directory
-
-    - name: Enable LightHouse site
-      ansible.builtin.file:
-        src: /etc/nginx/sites-available/lighthouse
-        dest: /etc/nginx/sites-enabled/lighthouse
-        state: link
-
-  handlers:
-    - name: restart nginx
-      ansible.builtin.service:
-        name: nginx
-        state: restarted
 
 
 
