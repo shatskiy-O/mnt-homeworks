@@ -1,0 +1,1146 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Microsoft Office User</Author>
+  <LastAuthor>Microsoft Office User</LastAuthor>
+  <Created>2024-04-18T11:04:02Z</Created>
+  <LastSaved>2024-04-18T11:04:38Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>17240</WindowHeight>
+  <WindowWidth>28240</WindowWidth>
+  <WindowTopX>3160</WindowTopX>
+  <WindowTopY>2260</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="12"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Лист1">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="364" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Row ss:Index="3">
+    <Cell><Data ss:Type="String">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">&lt;!DOCTYPE workflow PUBLIC &quot;-//OpenSymphony Group//DTD OSWorkflow 2.8//EN&quot; &quot;http://www.opensymphony.com/osworkflow/workflow_2_8.dtd&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">&lt;workflow&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;meta name=&quot;jira.description&quot;&gt;bug&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;meta name=&quot;jira.update.author.id&quot;&gt;712020:6d5a775e-10a5-44ef-860b-ab0522c42241&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;meta name=&quot;jira.update.author.key&quot;&gt;712020:6d5a775e-10a5-44ef-860b-ab0522c42241&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;meta name=&quot;jira.updated.date&quot;&gt;1685182097019&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;initial-actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;action id=&quot;1&quot; name=&quot;Create&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;2&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;validators&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;validator name=&quot;&quot; type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.validator.PermissionValidator&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;arg name=&quot;permission&quot;&gt;Create Issue&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/validator&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/validators&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;unconditional-result old-status=&quot;null&quot; status=&quot;open&quot; step=&quot;1&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueCreateFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;arg name=&quot;eventTypeId&quot;&gt;1&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;/initial-actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;steps&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;1&quot; name=&quot;Open&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;11&quot; name=&quot;bug.on_reproduce&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;2&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;2&quot; name=&quot;On reproduce&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10052&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;21&quot; name=&quot;bug.done_reproduce&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;3&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;31&quot; name=&quot;bug.open&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;1&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;3&quot; name=&quot;Done reproduce&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10053&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;41&quot; name=&quot;bug.one_fix&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;On fix&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;4&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;4&quot; name=&quot;On fix&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10054&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;51&quot; name=&quot;bug.on_reproduce&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;2&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;61&quot; name=&quot;bug.done_fix&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;5&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;5&quot; name=&quot;Done fix&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10055&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;71&quot; name=&quot;bug.on_test&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;On test&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;6&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;6&quot; name=&quot;On test&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10056&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;81&quot; name=&quot;bug.one_fix&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;4&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;91&quot; name=&quot;bug.done&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;Done&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;7&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;7&quot; name=&quot;Done&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;10022&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;101&quot; name=&quot;bug.closed&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;closed&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;8&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;action id=&quot;111&quot; name=&quot;bug.open&quot; view=&quot;fieldscreen&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.description&quot;&gt;Open&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;meta name=&quot;jira.fieldscreen.id&quot;&gt;1&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;unconditional-result old-status=&quot;null&quot; status=&quot;null&quot; step=&quot;1&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.UpdateIssueStatusFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.misc.CreateCommentFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.GenerateChangeHistoryFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.issue.IssueReindexFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;function type=&quot;class&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;class.name&quot;&gt;com.atlassian.jira.workflow.function.event.FireIssueEventFunction&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                  &lt;arg name=&quot;eventTypeId&quot;&gt;13&lt;/arg&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">                &lt;/function&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">              &lt;/post-functions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">            &lt;/unconditional-result&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">          &lt;/results&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">        &lt;/action&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;/actions&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;step id=&quot;8&quot; name=&quot;Closed&quot;&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">      &lt;meta name=&quot;jira.status.id&quot;&gt;6&lt;/meta&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">    &lt;/step&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">  &lt;/steps&gt;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">&lt;/workflow&gt;</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Selected/>
+   <TopRowVisible>144</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>15</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
