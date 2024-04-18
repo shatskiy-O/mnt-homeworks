@@ -43,3 +43,21 @@
 Выполненное домашнее задание пришлите в виде ссылки на .md-файл в вашем репозитории.
 
 ---
+
+## Ответ 
+
+### Задачи типа bug
+
+![alt text](https://github.com/shatskiy-O/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/1.png)
+
+### Остальные задачи
+
+![alt text](https://github.com/shatskiy-O/mnt-homeworks/blob/MNT-video/09-ci-01-intro/img/2.png)
+
+[All.xml](https://github.com/shatskiy-O/mnt-homeworks/blob/MNT-video/09-ci-01-intro/xml/All.xml)
+
+[bug.xml](https://github.com/shatskiy-O/mnt-homeworks/blob/MNT-video/09-ci-01-intro/xml/bug.xml)
+
+
+
+
